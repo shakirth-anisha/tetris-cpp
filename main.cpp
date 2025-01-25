@@ -1,18 +1,21 @@
 #include <raylib.h>
-#include <vector>
-#include <cstdlib>
-#include <ctime>
 
-int main(){
-    InitWindow(300, 600, "raylib tetris");
-    SetTargetFPS(60);
-while (WindowShouldClose() == false) {
+#include "grid.h"
+
+int main() {
+  Color darkBlue = {44, 44, 127, 255};
+  InitWindow(300, 600, "raylib tetris");
+  SetTargetFPS(60);
+
+  Grid grid = Grid();
+  grid.Print();
+
+  while (WindowShouldClose() == false) {
     BeginDrawing();
-    
+    ClearBackground(darkBlue);
     EndDrawing();
-}
+  }
 
-
-    CloseWindow();
-    return 0;
+  CloseWindow();
+  return 0;
 }

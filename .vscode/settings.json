@@ -57,9 +57,11 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "makefile.configureOnOpen": false,
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, BreakBeforeBraces: Attach }",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IncludeBlocks: Preserve }",
   "editor.formatOnSave": true,
+
   "files.associations": {
+    "*.rmd": "markdown",
     "iostream": "cpp",
     "__bit_reference": "cpp",
     "__hash_table": "cpp",
@@ -110,6 +112,7 @@
     "unordered_map": "cpp",
     "variant": "cpp",
     "vector": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "map": "cpp"
   }
 }

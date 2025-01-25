@@ -3,7 +3,7 @@
 #include "grid.h"
 
 int main() {
-  Color darkBlue = {44, 44, 127, 255};
+  Color darkBlue = {23, 36, 50, 255};
   InitWindow(300, 600, "raylib tetris");
   SetTargetFPS(60);
 
@@ -13,6 +13,7 @@ int main() {
   while (WindowShouldClose() == false) {
     BeginDrawing();
     ClearBackground(darkBlue);
+    grid.Draw();
     EndDrawing();
   }
 

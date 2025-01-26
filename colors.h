@@ -12,3 +12,4 @@ extern const Color thunderGray;
 extern const Color blackenedYellow;
 
 std::vector<Color> GetCellColors();
+Color GetBackgroundColor();

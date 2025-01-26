@@ -1,16 +1,17 @@
 #include <raylib.h>
 #include "blocks.cpp"
+#include "colors.h"
 #include "grid.h"
 
 int main() {
-  Color darkBlue = {23, 36, 50, 255};
+  Color darkBlue = GetBackgroundColor();
   InitWindow(300, 600, "raylib tetris");
   SetTargetFPS(60);
 
   Grid grid = Grid();
   grid.Print();
 
-  LBlock block = LBlock();
+  ZBlock block = ZBlock();
 
   while (WindowShouldClose() == false) {
     BeginDrawing();

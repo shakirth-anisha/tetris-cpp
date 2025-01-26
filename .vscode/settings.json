@@ -1,8 +1,6 @@
 {
-  //mine
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, ColumnLimit: 0, IncludeBlocks: Preserve }",
   "editor.formatOnSave": true,
-  //default
   "C_Cpp_Runner.cCompilerPath": "clang",
   "C_Cpp_Runner.cppCompilerPath": "clang++",
   "C_Cpp_Runner.debuggerPath": "lldb",
@@ -114,6 +112,7 @@
     "variant": "cpp",
     "vector": "cpp",
     "algorithm": "cpp",
-    "map": "cpp"
+    "map": "cpp",
+    "__tree": "cpp"
   }
 }

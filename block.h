@@ -15,6 +15,7 @@ class Block {
 
  public:
   Block();
+  void Draw();
   int id;
   map<int, vector<Position>> cells;
 };
